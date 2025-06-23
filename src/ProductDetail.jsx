@@ -2,19 +2,51 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { sampleProducts } from './sampleProducts';
 import './styles/ProductDetail.css';
+import { useCart } from './Context';
+import Price from './componens/Price';
 
 function ProductDetail() {
   const { id } = useParams();
   const product = sampleProducts.find(p => String(p.id) === String(id));
-  const [selectedSize, setSelectedSize] = useState(product.sizes[0] || '');
+  const [selectedSize, setSelectedSize] = useState(product?.sizes[0] || '');
   const [selectedImageIdx, setSelectedImageIdx] = useState(0);
+  const { setCartItems } = useCart();
 
   if (!product) return <div>Product not found</div>;
+
+  const handleAddToCart = () => {
+    if (!selectedSize) {
+      return;
+    }
+
+    setCartItems(prevCartItems => {
+      const existingItemIndex = prevCartItems.findIndex(
+        item => item.product.id === product.id && item.size === selectedSize
+      );
+
+      if (existingItemIndex > -1) {
+        const updatedCart = [...prevCartItems];
+        updatedCart[existingItemIndex] = {
+          ...updatedCart[existingItemIndex],
+          quantity: updatedCart[existingItemIndex].quantity + 1,
+        };
+        return updatedCart;
+      } else {
+        return [
+          ...prevCartItems,
+          {
+            product: product,
+            size: selectedSize,
+            quantity: 1,
+          },
+        ];
+      }
+    });
+  };
 
   return (
     <div className="product-detail-container">
       <div className="product-detail-images">
-
         <div className="product-thumbnails">
           {product.images.map((img, idx) => (
             <img
@@ -26,13 +58,10 @@ function ProductDetail() {
             />
           ))}
         </div>
-
         <div className="product-main-image">
           <img src={product.images[selectedImageIdx]} alt={product.name} />
         </div>
-
       </div>
-
       <div className="product-detail-info">
         <h1 className="product-brand">{product.brand}</h1>
         <h2 className="product-name">{product.name}</h2>
@@ -43,15 +72,16 @@ function ProductDetail() {
               <button
                 key={size}
                 className={`size-btn${selectedSize === size ? ' selected' : ''}`}
-                onClick={() => setSelectedSize(size)}>
+                onClick={() => setSelectedSize(size)}
+              >
                 {size}
               </button>
             ))}
           </div>
         </div>
         <div className="label">PRICE:</div>
-        <div className="product-price-detail">${Number(product.price).toFixed(2)}</div>
-        <button className="add-to-cart-detail">ADD TO CART</button>
+        <Price priceUSD={product.price}/>
+        <button className="add-to-cart-detail" onClick={handleAddToCart}>ADD TO CART</button>
         <div className="product-description">{product.description}</div>
       </div>
     </div>

@@ -67,3 +67,10 @@
 .product-card:hover .add-to-cart {
     opacity: 1;
 }
+
+.blurred {
+    filter: blur(1px);
+    background-color: #7b7b7b65;
+    pointer-events: none;
+}
+

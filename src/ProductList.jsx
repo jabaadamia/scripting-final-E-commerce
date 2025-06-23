@@ -4,13 +4,15 @@ import { sampleProducts } from './sampleProducts';
 import './styles/ProductList.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
-
+import { useCart } from './Context';
+import Price from './componens/Price';
 
 function ProductList() {
   const [products, setProducts] = useState([]);
   const { category } = useParams();
+  const { setCartItems, isMiniCartOpen } = useCart();
 
-  const fetchProducts = async () => {
+  const fetchProducts = () => {
     setProducts(sampleProducts);
   };
 
@@ -22,20 +24,48 @@ function ProductList() {
     ? products.filter((product) => product.category.toLowerCase() === category.toLowerCase())
     : products;
 
+  const handleAddToCart = (product) => {
+    const selectedSize = product.sizes[0];
+
+    setCartItems(prevCartItems => {
+      const existingItemIndex = prevCartItems.findIndex(
+        item => item.product.id === product.id && item.size === selectedSize
+      );
+
+      if (existingItemIndex > -1) {
+        const updatedCart = [...prevCartItems];
+        updatedCart[existingItemIndex] = {
+          ...updatedCart[existingItemIndex],
+          quantity: updatedCart[existingItemIndex].quantity + 1,
+        };
+        return updatedCart;
+      } else {
+        return [
+          ...prevCartItems,
+          {
+            product: { ...product, brand: product.brand},
+            size: selectedSize,
+            quantity: 1,
+            imageIdx: 0,
+          },
+        ];
+      }
+    });
+  };
+
   return (
-    <div className="product-list">
+    <div className={`product-list${isMiniCartOpen ? ' blurred' : ''}`}>
       <div className="products-grid">
         {filteredProducts.map((product) => (
           <Link to={`/product/${product.id}`} key={product.id} className="product-card">
             <img src={product.images[0]} alt={product.name} className="product-image" />
             <div className="product-info">
               <h3 className="product-name">{product.name}</h3>
-              <p className="product-price">${Number(product.price).toFixed(2)}</p>
+              <Price priceUSD={product.price}/>
             </div>
-            <div className="add-to-cart"> 
+            <div className="add-to-cart" onClick={(e) => { e.preventDefault(); handleAddToCart(product); }}>
               <FontAwesomeIcon icon={faCartShopping} />
             </div>
-
           </Link>
         ))}
       </div>

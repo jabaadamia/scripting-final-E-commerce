@@ -5,6 +5,7 @@ import kid1_3 from './sampleImages/kid1-3.png';
 export const sampleProducts = [
   {
     id: 1,
+    brand: 'brand1',
     name: 'Product 1',
     category: 'man',
     sizes: ['S', 'M', 'L'],
@@ -14,14 +15,17 @@ export const sampleProducts = [
   },
   {
     id: 2,
+    brand: 'brand2',
     name: 'Product 2',
     category: 'woman',
     sizes: ['S', 'M', 'L'],
     price: 120,
     images: [kid1],
+    description: "The wearable shark blanket features a unique design that resembles a shark, complete with a fin, tail, and shark like appearance. It is designed to wrap around the body, allowing the wearer to slip their legs into the shark's mouth, giving the illusion of being swallowed by a shark.",
   },
   {
     id: 3,
+    brand: 'brand3',
     name: 'Product 3',
     category: 'kids',
     sizes: ['S', 'M'],
@@ -31,6 +35,7 @@ export const sampleProducts = [
   },
   {
     id: 4,
+    brand: 'brand4',
     name: 'Product 4',
     category: 'kids',
     sizes: ['S'],
@@ -40,6 +45,7 @@ export const sampleProducts = [
   },
   {
     id: 5,
+    brand: 'brand5',
     name: 'Product 5',
     category: 'kids',
     sizes: ['S'],
@@ -49,6 +55,7 @@ export const sampleProducts = [
   },
   {
     id: 6,
+    brand: 'brand6',
     name: 'Product 6',
     category: 'kids',
     sizes: ['S', 'M'],
