@@ -1,0 +1,32 @@
+.navbar {
+    background: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+.bar-link {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.category-link {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.category-link:hover {
+    color: #5ECE7B;
+}
+
+.active-link {
+    color: #5ECE7B;   
+}
+
+.cart-link{
+    color: black;
+}

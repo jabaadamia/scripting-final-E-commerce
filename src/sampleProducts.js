@@ -1,0 +1,59 @@
+import kid1 from './sampleImages/kid1.png';
+import kid1_2 from './sampleImages/kid1-2.png';
+import kid1_3 from './sampleImages/kid1-3.png';
+
+export const sampleProducts = [
+  {
+    id: 1,
+    name: 'Product 1',
+    category: 'man',
+    sizes: ['S', 'M', 'L'],
+    price: 100,
+    images: [kid1],
+    description: "The wearable shark blanket features a unique design that resembles a shark, complete with a fin, tail, and shark like appearance. It is designed to wrap around the body, allowing the wearer to slip their legs into the shark's mouth, giving the illusion of being swallowed by a shark.",
+  },
+  {
+    id: 2,
+    name: 'Product 2',
+    category: 'woman',
+    sizes: ['S', 'M', 'L'],
+    price: 120,
+    images: [kid1],
+  },
+  {
+    id: 3,
+    name: 'Product 3',
+    category: 'kids',
+    sizes: ['S', 'M'],
+    price: 80,
+    images: [kid1, kid1_2, kid1_3],
+    description: "The wearable shark blanket features a unique design that resembles a shark, complete with a fin, tail, and shark like appearance. It is designed to wrap around the body, allowing the wearer to slip their legs into the shark's mouth, giving the illusion of being swallowed by a shark.",
+  },
+  {
+    id: 4,
+    name: 'Product 4',
+    category: 'kids',
+    sizes: ['S'],
+    price: 280,
+    images: [kid1],
+    description: "The wearable shark blanket features a unique design that resembles a shark, complete with a fin, tail, and shark like appearance. It is designed to wrap around the body, allowing the wearer to slip their legs into the shark's mouth, giving the illusion of being swallowed by a shark.",
+  },
+  {
+    id: 5,
+    name: 'Product 5',
+    category: 'kids',
+    sizes: ['S'],
+    price: 40,
+    images: [kid1],
+    description: "The wearable shark blanket features a unique design that resembles a shark, complete with a fin, tail, and shark like appearance. It is designed to wrap around the body, allowing the wearer to slip their legs into the shark's mouth, giving the illusion of being swallowed by a shark.",
+  },
+  {
+    id: 6,
+    name: 'Product 6',
+    category: 'kids',
+    sizes: ['S', 'M'],
+    price: 28,
+    images: [kid1],
+    description: "The wearable shark blanket features a unique design that resembles a shark, complete with a fin, tail, and shark like appearance. It is designed to wrap around the body, allowing the wearer to slip their legs into the shark's mouth, giving the illusion of being swallowed by a shark.",
+  },
+]
