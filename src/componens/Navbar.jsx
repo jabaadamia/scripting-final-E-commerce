@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import '../styles/Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping, faBagShopping } from '@fortawesome/free-solid-svg-icons';
 import { useCart } from '../Context';
 import MiniCart from './MiniCart';
 
@@ -51,6 +51,11 @@ function Navbar() {
           KIDS
         </NavLink>
       </div>
+      <div className="navbar-center">
+        <Link to="/">
+          <FontAwesomeIcon icon={faBagShopping} className="shopping-bag-icon" />
+        </Link>
+      </div>
       <div className="bar-link">
         <div>
           <select name="currency" value={currency} onChange={handleCurrencyChange}>
@@ -61,7 +66,9 @@ function Navbar() {
         </div>
         <div className="cart-icon-container" onClick={toggleMiniCart}>
           <FontAwesomeIcon icon={faCartShopping} />
-          {cartItemCount > 0 && <span className="cart-item-count">{cartItemCount}</span>}
+          {cartItemCount > 0 && (
+            <span className="cart-item-count-circle">{cartItemCount}</span>
+          )}
         </div>
         {isMiniCartOpen && <MiniCart onClose={closeMiniCart} />}
       </div>

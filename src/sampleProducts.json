@@ -1,0 +1,301 @@
+[
+  {
+    "id": 1,
+    "brand": "Digital Printed Clothes",
+    "name": "Coconut Tree Print",
+    "category": "man",
+    "sizes": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 25,
+    "images": [
+      "https://img.kwcdn.com/product/fancy/6ab91321-73fa-4ddb-9b2f-7e8d981db5bc.jpg?imageView2/2/w/1300/q/90/format/webp",
+      "https://img.kwcdn.com/product/fancy/39f2ed50-b496-47ab-afcc-7b8373ba56a9.jpg?imageView2/2/w/1300/q/90/format/webp"
+    ],
+    "description": "Coconut Tree Print Men's Summer Fashionable And Simple Short Sleeve Button Casual Lapel Shirt, Trendy And Versatile, Suitable For Dates, Beach Holiday, As Gifts."
+  },
+  {
+    "id": 3,
+    "brand": "H&M",
+    "name": "gray hoodie",
+    "category": "woman",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 15,
+    "images": [
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80"
+    ],
+    "description": "Soft cotton white t-shirt, a wardrobe essential for every man."
+  },
+  {
+    "id": 4,
+    "brand": "Zara",
+    "name": "Floral Summer Dress",
+    "category": "woman",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "price": 60,
+    "images": [
+      "https://static.zara.net/assets/public/94cb/8923/303547af99fa/9fd162287488/03749846300-e1/03749846300-e1.jpg?ts=1749126377320&w=2880"
+    ],
+    "description": "Lightweight floral dress perfect for summer outings and vacations."
+  },
+  {
+    "id": 7,
+    "brand": "Gap Kids",
+    "name": "Rainbow Hoodie",
+    "category": "kids",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "price": 28,
+    "images": [
+      "https://www.hippyclothingco.co.uk/cdn/shop/products/PN-021.jpg?v=1627471290https://www.hippyclothingco.co.uk/cdn/shop/products/PN-021.jpg?v=1627471290"
+    ],
+    "description": "Colorful rainbow hoodie made from soft cotton, perfect for kids."
+  },
+  {
+    "id": 8,
+    "brand": "Carter",
+    "name": "Dinosaur Pajamas",
+    "category": "kids",
+    "sizes": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "price": 22,
+    "images": [
+      "https://i5.walmartimages.com/seo/ZMHEGW-Outfits-For-Toddler-Little-Boys-Pajamas-Dinosaur-Cotton-2-Piece-Train-Sleepwear-Fall-Winter-Clothes-Set_18dca2f5-aef2-4c25-8c0f-40d2da807442.530760da0e4c9d82ceef05c3926d6835.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+    ],
+    "description": "Fun dinosaur print pajamas set for a cozy nights sleep."
+  },
+  {
+    "id": 9,
+    "brand": "Adidas",
+    "name": "Kids Sneakers",
+    "category": "kids",
+    "sizes": [
+      "34",
+      "35",
+      "36"
+    ],
+    "price": 40,
+    "images": [
+      "https://i5.walmartimages.com/seo/Athletic-Works-Little-Big-Kids-Mesh-Athletic-Sneakers_d6875fca-f167-492b-b84c-b4b89fb41db9.1e5db03904c61b0bc4675782dade672a.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "https://i5.walmartimages.com/asr/9f73bdf7-fed0-4c4d-9665-390fcfc227da.8d5ed87ea0fe0c5582294f2dffdc80fd.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+    ],
+    "description": "Comfortable and durable sneakers for active kids."
+  },
+  {
+    "id": 10,
+    "brand": "Tralalero Tralala™",
+    "name": "wearable costume",
+    "category": "kids",
+    "sizes": [
+      "S",
+      "M"
+    ],
+    "price": 80,
+    "images": [
+      "https://m.media-amazon.com/images/I/51WyCFq0XUL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/51EVC9-wUPL._AC_SX679_.jpg",
+      "https://m.media-amazon.com/images/I/61ZKmJ0s+YL._AC_SX679_.jpg"
+    ],
+    "description": "The wearable shark blanket features a unique design that resembles a shark, complete with a fin, tail, and shark like appearance. It is designed to wrap around the body, allowing the wearer to slip their legs into the shark's mouth, giving the illusion of being swallowed by a shark."
+  },
+  {
+    "id": 121,
+    "brand": "Generic Apparel",
+    "name": "Majestic Mountain Graphic T-Shirt",
+    "category": "man",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 44,
+    "images": [
+      "https://i.imgur.com/QkIa5tT.jpeg",
+      "https://i.imgur.com/jb5Yu0h.jpeg",
+      "https://i.imgur.com/UlxxXyG.jpeg"
+    ],
+    "description": "Elevate your wardrobe with this stylish black t-shirt featuring a striking monochrome mountain range graphic. Perfect for those who love the outdoors or want to add a touch of nature-inspired design to their look, this tee is crafted from soft, breathable fabric ensuring all-day comfort. Ideal for casual outings or as a unique gift, this t-shirt is a versatile addition to any collection."
+  },
+  {
+    "id": 122,
+    "brand": "Generic Apparel",
+    "name": "Classic Red Pullover Hoodie",
+    "category": "man",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 10,
+    "images": [
+      "https://i.imgur.com/1twoaDy.jpeg",
+      "https://i.imgur.com/FDwQgLy.jpeg",
+      "https://i.imgur.com/kg1ZhhH.jpeg"
+    ],
+    "description": "Elevate your casual wardrobe with our Classic Red Pullover Hoodie. Crafted with a soft cotton blend for ultimate comfort, this vibrant red hoodie features a kangaroo pocket, adjustable drawstring hood, and ribbed cuffs for a snug fit. The timeless design ensures easy pairing with jeans or joggers for a relaxed yet stylish look, making it a versatile addition to your everyday attire."
+  },
+  {
+    "id": 123,
+    "brand": "Generic Apparel",
+    "name": "Classic Heather Gray Hoodie",
+    "category": "man",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 69,
+    "images": [
+      "https://i.imgur.com/cHddUCu.jpeg",
+      "https://i.imgur.com/CFOjAgK.jpeg",
+      "https://i.imgur.com/wbIMMme.jpeg"
+    ],
+    "description": "Stay cozy and stylish with our Classic Heather Gray Hoodie. Crafted from soft, durable fabric, it features a kangaroo pocket, adjustable drawstring hood, and ribbed cuffs. Perfect for a casual day out or a relaxing evening in, this hoodie is a versatile addition to any wardrobe."
+  },
+  {
+    "id": 124,
+    "brand": "Generic Apparel",
+    "name": "Classic Grey Hooded Sweatshirt",
+    "category": "woman",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 90,
+    "images": [
+      "https://i.imgur.com/R2PN9Wq.jpeg",
+      "https://i.imgur.com/IvxMPFr.jpeg",
+      "https://i.imgur.com/7eW9nXP.jpeg"
+    ],
+    "description": "Elevate your casual wear with our Classic Grey Hooded Sweatshirt. Made from a soft cotton blend, this hoodie features a front kangaroo pocket, an adjustable drawstring hood, and ribbed cuffs for a snug fit. Perfect for those chilly evenings or lazy weekends, it pairs effortlessly with your favorite jeans or joggers."
+  },
+  {
+    "id": 125,
+    "brand": "Generic Apparel",
+    "name": "Classic Black Hooded Sweatshirt",
+    "category": "man",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 79,
+    "images": [
+      "https://i.imgur.com/cSytoSD.jpeg"
+    ],
+    "description": "Elevate your casual wardrobe with our Classic Black Hooded Sweatshirt. Made from high-quality, soft fabric that ensures comfort and durability, this hoodie features a spacious kangaroo pocket and an adjustable drawstring hood. Its versatile design makes it perfect for a relaxed day at home or a casual outing."
+  },
+  {
+    "id": 126,
+    "brand": "Generic Apparel",
+    "name": "Classic Comfort Fit Joggers",
+    "category": "man",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 25,
+    "images": [
+      "https://i.imgur.com/ZKGofuB.jpeg",
+      "https://i.imgur.com/633Fqrz.jpeg"
+    ],
+    "description": "Discover the perfect blend of style and comfort with our Classic Comfort Fit Joggers. These versatile black joggers feature a soft elastic waistband with an adjustable drawstring, two side pockets, and ribbed ankle cuffs for a secure fit. Made from a lightweight and durable fabric, they are ideal for both active days and relaxed lounging."
+  },
+  {
+    "id": 127,
+    "brand": "Generic Apparel",
+    "name": "Classic Red Jogger Sweatpants",
+    "category": "man",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 98,
+    "images": [
+      "https://i.imgur.com/9LFjwpI.jpeg",
+      "https://i.imgur.com/vzrTgUR.jpeg",
+      "https://i.imgur.com/p5NdI6n.jpeg"
+    ],
+    "description": "Experience ultimate comfort with our red jogger sweatpants, perfect for both workout sessions and lounging around the house. Made with soft, durable fabric, these joggers feature a snug waistband, adjustable drawstring, and practical side pockets for functionality. Their tapered design and elastic cuffs offer a modern fit that keeps you looking stylish on the go."
+  },
+  {
+    "id": 128,
+    "brand": "Generic Apparel",
+    "name": "Classic Comfort Drawstring Joggers",
+    "category": "woman",
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "price": 79,
+    "images": [
+      "https://i.imgur.com/mp3rUty.jpeg",
+      "https://i.imgur.com/JQRGIc2.jpeg"
+    ],
+    "description": "Experience the perfect blend of comfort and style with our Classic Comfort Drawstring Joggers. Designed for a relaxed fit, these joggers feature a soft, stretchable fabric, convenient side pockets, and an adjustable drawstring waist with elegant gold-tipped detailing. Ideal for lounging or running errands, these pants will quickly become your go-to for effortless, casual wear."
+  },
+  {
+    "id": 129,
+    "brand": "Generic Apparel",
+    "name": "Classic Navy Blue Baseball Cap",
+    "category": "man",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "price": 61,
+    "images": [
+      "https://i.imgur.com/R3iobJA.jpeg",
+      "https://i.imgur.com/Wv2KTsf.jpeg",
+      "https://i.imgur.com/76HAxcA.jpeg"
+    ],
+    "description": "Step out in style with this sleek navy blue baseball cap. Crafted from durable material, it features a smooth, structured design and an adjustable strap for the perfect fit. Protect your eyes from the sun and complement your casual looks with this versatile and timeless accessory."
+  },
+  {
+    "id": 130,
+    "brand": "Generic Apparel",
+    "name": "Classic Blue Baseball Cap",
+    "category": "man",
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "price": 86,
+    "images": [
+      "https://i.imgur.com/wXuQ7bm.jpeg",
+      "https://i.imgur.com/BZrIEmb.jpeg"
+    ],
+    "description": "Top off your casual look with our Classic Blue Baseball Cap, made from high-quality materials for lasting comfort. Featuring a timeless six-panel design with a pre-curved visor, this adjustable cap offers both style and practicality for everyday wear."
+  }
+]

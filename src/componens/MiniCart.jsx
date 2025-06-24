@@ -30,6 +30,10 @@ function MiniCart({ onClose }) {
     onClose();
   };
 
+  const handleCheckOut = () => {
+    navigate('/shipping-info');
+  }
+
   return (
     <div className="mini-cart-dropdown">
       <div className="mini-cart-header">
@@ -79,7 +83,7 @@ function MiniCart({ onClose }) {
 
       <div className="mini-cart-actions">
         <button className="mini-cart-view-bag-btn" onClick={handleViewBag}>VIEW BAG</button>
-        <button className="mini-cart-checkout-btn">CHECK OUT</button>
+        <button className="mini-cart-checkout-btn" onClick={handleCheckOut}>CHECK OUT</button>
       </div>
     </div>
   );

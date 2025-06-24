@@ -1,10 +1,10 @@
 import { useCart } from '../Context';
 
-function Price({priceUSD}) {
+function Price({priceUSD, className = ""}) {
   const { currency, currencyRates } = useCart();
 
   return (
-    <p className="product-price product-price-detail cart-summary-value">{currency}{Number(priceUSD*currencyRates[currency]).toFixed(2)}</p>
+    <p className={`product-price product-price-detail cart-summary-value ${className}`}>{currency}{Number(priceUSD*currencyRates[currency]).toFixed(2)}</p>
   );
 }
 

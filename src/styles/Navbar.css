@@ -5,8 +5,9 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
-  }
-  
+    position: relative;
+}
+
 .bar-link {
     display: flex;
     align-items: center;
@@ -29,4 +30,43 @@
 
 .cart-link{
     color: black;
+}
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shopping-bag-icon {
+    font-size: 2.5rem;
+    color: #5ECE7B;
+    background: #fff;
+    border-radius: 8px;
+    padding: 0.5rem 1.2rem;
+}
+
+.cart-icon-container {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cart-item-count-circle {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
