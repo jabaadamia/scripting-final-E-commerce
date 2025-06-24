@@ -106,3 +106,10 @@
 .add-to-cart-detail:hover {
   background: #4caf50;
 }
+
+.blurred {
+  opacity: 0.6;
+  filter: blur(5px);
+  pointer-events: none;
+}
+

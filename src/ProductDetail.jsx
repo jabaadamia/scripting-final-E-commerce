@@ -11,7 +11,7 @@ function ProductDetail() {
   const product = sampleProducts.find(p => String(p.id) === String(id));
   const [selectedSize, setSelectedSize] = useState(product.sizes[0] || '');
   const [selectedImageIdx, setSelectedImageIdx] = useState(0);
-  const { setCartItems } = useCart();
+  const { setCartItems, isMiniCartOpen } = useCart();
 
   if (!product) return <div>Product not found</div>;
 
@@ -48,7 +48,7 @@ function ProductDetail() {
   return (
     <div>
       <Navbar/>
-      <div className="product-detail-container">
+      <div className={`product-detail-container${isMiniCartOpen ? ' blurred' : ''}`}>
         <div className="product-detail-images">
           <div className="product-thumbnails">
             {product.images.map((img, idx) => (
