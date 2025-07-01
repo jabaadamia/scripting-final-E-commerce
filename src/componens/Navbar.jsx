@@ -9,7 +9,10 @@ import MiniCart from './MiniCart';
 function Navbar() {
   const { cartItems, currency, setCurrency, isMiniCartOpen, setIsMiniCartOpen } = useCart();
 
-  const cartItemCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+  let cartItemCount = 0;
+  for (let i = 0; i < cartItems.length; i++) {
+    cartItemCount += cartItems[i].quantity;
+  }
 
   const handleCurrencyChange = (event) => {
     setCurrency(event.target.value);

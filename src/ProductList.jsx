@@ -43,7 +43,6 @@ function ProductList() {
             product: product,
             size: selectedSize,
             quantity: 1,
-            imageIdx: 0,
           },
         ];
       }

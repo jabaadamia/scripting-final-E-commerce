@@ -23,7 +23,10 @@ function MiniCart({ onClose }) {
     ));
   };
 
-  const totalQty = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+  let totalQty = 0;
+  for (let i = 0; i < cartItems.length; i++) {
+    totalQty += cartItems[i].quantity;
+  }
 
   const handleViewBag = () => {
     navigate('/cart');
@@ -70,7 +73,7 @@ function MiniCart({ onClose }) {
             </div>
 
             <div className="mini-cart-image">
-              <img src={item.product.images[item.imageIdx]} alt={item.product.name} />
+              <img src={item.product.images[0]} alt={item.product.name} />
             </div>
           </div>
         ))}

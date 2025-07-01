@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useCart } from './Context';
 import './styles/Cart.css';
 import { useNavigate } from 'react-router-dom';
@@ -8,6 +8,23 @@ import Navbar from './componens/Navbar';
 function Cart() {
   const { cartItems, setCartItems, getTotalUSD } = useCart();
   const navigate = useNavigate();
+  const [imageIndices, setImageIndices] = useState(cartItems.map(() => 0));
+
+  useEffect(() => {
+    setImageIndices(prev => {
+      const diff = cartItems.length - prev.length;
+      if (diff > 0) {
+        let newIndices = prev.slice();
+        for (let i = 0; i < diff; i++) {
+          newIndices.push(0);
+        }
+        return newIndices;
+      } else if (diff < 0) {
+        return prev.slice(0, cartItems.length);
+      }
+      return prev;
+    });
+  }, [cartItems.length]);
 
   const handleQuantityChange = (idx, changeAmount) => {
     setCartItems(prevCart => {
@@ -19,17 +36,15 @@ function Cart() {
   };
 
   const handleImageNav = (idx, dir) => {
-    setCartItems(prevCart => prevCart.map((item, i) => {
-      if (i !== idx) return item;
-      
-      const len = item.product.images.length;
-      let newIdx = item.imageIdx + dir;
-      
+    setImageIndices(prev => {
+      const len = cartItems[idx].product.images.length;
+      let newIdx = prev[idx] + dir;
       if (newIdx < 0) newIdx = len - 1;
       if (newIdx >= len) newIdx = 0;
-      
-      return { ...item, imageIdx: newIdx };
-    }));
+      const newArr = [...prev];
+      newArr[idx] = newIdx;
+      return newArr;
+    });
   };
 
   const handleSizeChange = (idx, newSize) => {
@@ -38,7 +53,10 @@ function Cart() {
     ));
   };
 
-  const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+  let totalQuantity = 0;
+  for (let i = 0; i < cartItems.length; i++) {
+    totalQuantity += cartItems[i].quantity;
+  }
 
   const handleContinue = () => {
     navigate('/shipping-info');
@@ -77,7 +95,7 @@ function Cart() {
                 </div>
                 <div className="cart-item-image-list">
                   <img
-                    src={item.product.images[item.imageIdx]}
+                    src={item.product.images[imageIndices[idx]]}
                     alt={item.product.name}
                     className="cart-item-image"
                   />
